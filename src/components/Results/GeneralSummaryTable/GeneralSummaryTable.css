@@ -1,0 +1,213 @@
+.general-summary-block {
+    margin-bottom: 60px;
+}
+
+.table-and-arrows-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1346px;
+    margin: 0 auto;
+  }
+
+  .table-wrapper-main {
+    display: flex;
+    align-items: center;
+    max-width: 1260px;
+    min-width: 1260px;
+    border: 2px solid var(--scan-green);
+    border-radius: 10px;
+    min-height: 158px;
+    max-height: 158px;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+  }
+
+  .table-wrapper::-webkit-scrollbar {
+    display: none; /* Для WebKit-браузеров, таких как Chrome и Safari */
+  }
+  
+  .table-headers {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--scan-green);
+    color: white;
+  }
+
+  .table-data {
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+  }
+  
+  .table-headers > div, .data-row > div {
+    min-width: 133px;
+    padding: 17.5px;
+    text-align: center;
+  }
+
+
+  .data-cell, .header-total, .header-period, .header-risks {
+    flex: 1;
+    padding: 17.5px;
+}
+   
+  .divider {
+    height: 124px;
+    width: 2px;
+    background-color: #949494;
+    opacity: 0.4;
+    margin: auto 0;
+  }
+
+  .scroll-btn {
+    width: 39px;
+    height: 39px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .scroll-btn.left {
+    transform: scaleX(-1);
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.table-data-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 430px;
+}
+
+.loading-icon-general-summary {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    animation: spin 2s linear infinite;
+}
+
+.loading-sign {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.error-500-message {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 18px;
+  text-align: center;
+  margin-left: 200px;
+}
+
+@media (max-width: 1360px) {
+  .general-summary-block {
+    margin-top: 0px;
+}
+
+  .table-and-arrows-container {
+      width: 350px;
+      margin: 0;
+  }
+
+  .table-wrapper-main {
+      display: block;
+      max-width: 298px;
+      width: 298px;
+      min-width: 298px;
+      max-height: 140px;
+      height: 140px;
+      min-height: 140px;
+  }
+
+  .table-wrapper {
+    width: 298px;
+  }
+  
+  .table-headers, .table-data {
+      display: flex;
+      width: 100%;
+  }
+  
+  .table-headers {
+      display: flex;
+      flex-direction: row;
+      background-color: var(--scan-green);
+      color: white;
+      height: 75px;
+      width: 298px;
+      margin-left: -2px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+  }
+
+  .table-headers > div, .data-row > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 99.333333px;
+    text-align: center;
+  }
+  
+  .table-data {
+      display: flex;
+  }
+  
+  .data-row {
+      display: flex;
+      flex-direction: row;
+      max-width: 298px;
+      min-width: 298px;
+      width: 298px;
+  }
+  
+  
+  .divider {
+    display: none;
+    visibility: hidden;
+  }
+
+  .table-data-loading {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.loading-icon-general-summary {
+  width: 36px;
+  height: 36px;
+}
+
+.loading-sign {
+  display: none;
+}
+
+.error-500-message {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 14px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+}

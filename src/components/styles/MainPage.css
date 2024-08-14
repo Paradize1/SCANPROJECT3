@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+
+.MainPage {
+    margin-top: 24px;
+    background: #fff; /* Цвет фона для основного контента */
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    height: 2637px;
+    flex-wrap: wrap;
+}
+
+.first_block{
+    width: 1320px;
+    height: 620px;
+    display: flex;
+    margin-top: 45px;
+}
+.fb_1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fb_2 {
+    background: url('images/first_image.svg') no-repeat;
+    width: 629px;
+    height: 593px;
+    
+}
+
+.fb_1_1 {
+    text-align: left;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 72px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 743px;
+    height: 288px;
+
+    font-family: 'Bold', sans-serif;
+
+}
+.fb_1_2 {
+    width: 534px;
+    height: 48px;
+    top: 470px;
+    left: 60px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    font-family: 'Bold', sans-serif;
+    margin-top: 20px;
+
+}
+
+.button_info {
+    width: 335px;
+    height: 59px;
+    border-radius: 5px;
+    opacity: 1;
+    background: rgba(89, 112, 255, 1);
+    border: none;
+    margin-top: 60px;
+    color: #fff;
+    font-family: 'Bold', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.63px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 1s, transform 0.1s; /* Анимация перехода */
+
+}
+
+.button_info:hover {
+    background-color: #0796f6;
+}
+
+.button_info:active {
+transform: translateY(2px); /* "Нажатие" кнопки */
+}
+
+.second_block {
+    background-image: url('images/second_block_image.svg');
+    background-repeat: no-repeat;
+    width: 1307; 
+    height: 575px;
+    margin-top: 70px;
+    margin-bottom: 107px;
+}
+
+
+
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .MainPage {
+        margin-left: 10px;
+        height: auto;
+    }
+
+    .first_block {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .fb_1, .fb_2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .fb_1_1 {
+        font-size: 40px;
+        line-height: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .fb_1_2 {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .button_info {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .second_block {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}

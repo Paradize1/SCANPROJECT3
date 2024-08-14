@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+.footer {
+    width: 1440px;
+    height: 137px;
+    background: rgba(2, 148, 145, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.footer-left {
+    background-image: url('images/Footer_logo.svg');
+    width: 141px;
+    height: 141px;
+    margin-left: 60px;
+}
+
+
+.footer-right {
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.01em;
+    text-align: right;
+
+    color: white;
+    margin-right: 45px;
+    margin-top: 25px;
+
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .footer-left {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+        margin-bottom: 20px; /* Отступ снизу для разделения элементов */
+        background-size: contain;
+        background-position: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 0;
+        margin-top: 0;
+    }
+}

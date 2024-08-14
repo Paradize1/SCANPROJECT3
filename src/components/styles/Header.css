@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+
+.header {
+    width: 1440px;
+    height: 93px;
+    text-align: center;
+    position: relative; /* Снять фиксированное позиционирование */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff; /* Добавление фона для видимости */
+    z-index: 1000; 
+}
+
+.top-left{
+    flex-basis: 50%;
+    width: 141px;
+    height: 93px;
+    background-image: url('images/Header_logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 60px;
+}
+
+.top-middle {
+    width: 236px;
+    height: 17px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter-Regular', sans-serif;
+    gap: 48px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.02em;
+    
+    
+}
+
+.top-right {
+
+    width: 251px;
+    height: 26px;
+    
+    flex-basis: 50%;
+    font-family: 'Inter-Bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-top: 33px;
+    margin-bottom: 34px;
+
+
+}
+
+.register_button {
+    width: 146px;
+    height: 17px;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-right: 18px;
+    border: 0;
+    outline: 0;
+    font-family: 'Inter-Bold', sans-serif;
+    opacity: 50%;
+
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s; /* Анимация перехода */
+}
+
+.registor_button:hover {
+    transform: translateY(2px);
+
+}
+  
+.register_button:active {
+    transform: translateY(2px); /* "Нажатие" кнопки */
+}
+
+
+.head_palka {
+    width: 2px;
+    height: 26px;
+    background: rgba(2, 148, 145, 1);
+    
+    
+}
+
+.login_button {
+    width: 65px;
+    height: 26px;
+    
+    border-radius: 5px;
+    background: rgba(124, 227, 225, 1);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    letter-spacing: 0.01em;
+
+    border: 0;
+    outline: 0;
+    margin-right: 60px;
+    margin-left: 20px;
+    font-family: 'Inter-Bold', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+
+}
+
+.login_button:hover {
+    background-color: #2980b9; /* Цвет кнопки при наведении */
+}
+  
+.login_button:active {
+    transform: translateY(2px); /* "Нажатие" кнопки */
+}
+
+.first_link, .second_link, .third_link {
+    margin: 0 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.first_link:hover,
+.second_link:hover,
+.third_link:hover {
+
+    transform: translateY(2px);
+}
+
+
+.companys {
+    width: 175px;
+    height: 63px;
+    margin-right: 150px;
+
+    font-family: Inter-Medium;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.1px;
+    text-align: left;
+
+}
+.count {
+    font-family: Inter-Medium;
+    font-size: 14px;
+    font-weight: 700;
+}
+.limit {
+    font-family: Inter-Medium;
+    font-size: 14px;
+    font-weight: 700;
+    color: #8AC540;
+}
+
+.avatar {
+    background-image: url('images/MainAvatar.svg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 32px;
+}
+
+.logout {
+    width: 32px;
+    height: 12px;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-right: 18px;
+    border: 0;
+    outline: 0;
+    font-family: 'Inter-Bold', sans-serif;
+    margin-top: 18px;
+    margin-left: -40px;
+}
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-spinner {
+    width: 24px;
+    height: 24px;
+    margin-left: 170px;
+    background-image: url('images/spinner.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation: rotate 1s linear infinite;
+}
+
+.company_or_spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .top-left {
+        width: 100px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .top-middle {
+        width: 100%;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .top-right {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .register_button,
+    .login_button {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        line-height: 14px;
+        margin: 5px 0;
+        padding: 5px 10px;
+    }
+
+    .head_palka {
+        width: 1px;
+        height: 20px;
+    }
+
+    .first_link, 
+    .second_link, 
+    .third_link {
+        margin: 5px 0;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+

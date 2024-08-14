@@ -1,0 +1,37 @@
+/* Путь к твоим шрифтам */
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+/* Пример применения шрифта к элементам */
+body {
+    width: 1440px;
+
+}
+
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+

@@ -1,0 +1,428 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+
+
+
+.Tariffs {
+    width: 1320px;
+    height: 664px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_tariffs {
+    width: 743px;
+    height: 54px;
+    
+    font-family: 'Bold', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;  
+}
+
+
+
+.first_card,
+.second_card,
+.third_card {
+    width: 415px;
+    height: 540px;
+    margin-top: 60px;
+}
+
+.first_card {
+    margin-right: 38px;
+    border-radius: 10px;
+}
+
+.first_card.authenticated {
+    border: 2px solid rgba(255, 182, 79, 1);
+}
+.first_card.not_authenticated {
+    border: none;
+}
+
+
+.third_card {
+    margin-right: 60px;
+    margin-left: 38px;
+}
+
+
+
+
+.card_1_head,
+.card_2_head,
+.card_3_head {
+    width: 415px;
+    height: 132px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card_1_head {
+    background: rgba(255, 182, 79, 1);
+}
+.card_2_head {
+    background: rgba(124, 227, 225, 1);
+}
+.card_3_head {
+    background: rgba(0, 0, 0, 1);
+}
+
+.card_1_head_image {
+    background: url('images/first_tariff_img.svg') no-repeat;
+    width: 92.24px;
+    height: 83.15px;
+    margin: auto;
+    flex-basis: auto;
+    margin-left: -30px;
+    margin-top: 10px;
+
+}
+.card_2_head_image {
+    background: url('images/second_tariff_img.svg') no-repeat;
+    width: 93.76px;
+    height: 103.97px;
+    margin: auto;
+    flex-basis: auto;
+    margin-left: -30px;
+    margin-top: -5px;
+
+    
+}
+.card_3_head_image {
+    background: url('images/third_tariff_img.svg') no-repeat;
+    width: 96px;
+    height: 80.09px;
+    margin: auto;
+    flex-basis: auto;
+    margin-left: -30px;
+
+    
+}
+
+.card_1_head_text_container,  
+.card_2_head_text_container, 
+.card_3_head_text_container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+} 
+
+.card_1_head_text_1,
+.card_2_head_text_1,
+.card_3_head_text_1 {
+    width: 131px;
+    height: 36px;
+    
+    opacity: 0px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    flex-basis: auto;
+    font-family: 'Bold', sans-serif;
+
+}
+
+.card_1_head_text_2,
+.card_2_head_text_2,
+.card_3_head_text_2 {
+    width: 313px;
+    height: 22px;
+    
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+
+    font-family: 'Regular', sans-serif;
+
+}
+
+.card_3_head_text_1,
+.card_3_head_text_2 {
+    color: white;
+}
+
+.current_tariff {
+    width: 134px;
+    height: 24px;
+    border-radius: 10px;
+    background: rgba(59, 165, 224, 1);
+    margin-top: 12px;
+    margin-left: 271px;
+    text-align: center;
+    color: white;
+
+    font-size: 14px;
+
+
+    font-weight: 400;
+    line-height: 21px;
+
+    font-family: 'Bold', sans-serif;
+
+
+}
+
+.prices_1,
+.prices_2,
+.prices_3 {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'Bold', sans-serif;
+
+}
+.prices_2,
+.prices_3 {
+    margin-top: 33px;
+}
+
+.card_1_content_price_1_1,
+.card_2_content_price_1_1,
+.card_3_content_price_1_1 {
+    width: 93px;
+    height: 30px;
+    opacity: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-left: 19px;
+
+}
+
+.card_1_content_price_2,
+.card_2_content_price_2,
+.card_3_content_price_2 {
+    width: 370px;
+    height: 22px;
+    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: 'Bold', sans-serif;
+
+}
+
+
+.card_1_about,
+.card_2_about,
+.card_3_about {
+    margin-left: 30px;
+    margin-top: 59px;
+    width: 341px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bold', sans-serif;
+
+
+}
+
+.tariff_include_1,
+.tariff_include_2,
+.tariff_include_3 {
+    width: 313px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: left;  
+  
+}
+
+.tariff_include_3{
+    margin-top: 34px;
+}
+.card_1_about_1,
+.card_2_about_1,
+.card_3_about_1 {
+    margin-top: 10px;
+    
+}
+
+.card_1_about_1,
+.card_1_about_2,
+.card_1_about_3,
+.card_2_about_1,
+.card_2_about_2,
+.card_2_about_3,
+.card_3_about_1,
+.card_3_about_2,
+.card_3_about_3 {
+    display: flex;
+    align-items: center; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    position: relative; 
+    font-family: 'Bold', sans-serif;
+
+}
+
+.card_1_about_2,
+.card_1_about_3,
+.card_2_about_2,
+.card_2_about_3,
+.card_3_about_2,
+.card_3_about_3 {
+    margin-top: 5px;
+}
+
+.card_1_about_1::before,
+.card_1_about_2::before,
+.card_1_about_3::before,
+.card_2_about_1::before,
+.card_2_about_2::before,
+.card_2_about_3::before,
+.card_3_about_1::before,
+.card_3_about_2::before,
+.card_3_about_3::before {
+    content: "";
+    background: url('images/galka.svg') no-repeat;
+    width: 20px; 
+    height: 20px; 
+    display: inline-block;
+    margin-right: 8px; /* Отступ справа, чтобы был промежуток между галочкой и текстом */
+}
+
+
+.go_to_office,
+.more_info_1,
+.more_info_2 {
+    width: 355px;
+    height: 59px;
+    border-radius: 5px;
+    margin-top: 55px;
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.go_to_office:hover {
+    background-color: #acd2e9;
+}
+.more_info_1:hover,
+.more_info_2:hover {
+    background-color: #323a3f;
+} 
+
+.go_to_office:active,
+.more_info_1:active,
+.more_info_2:active {
+    transform: translateY(2px);} 
+
+.go_to_office {
+    background: rgba(210, 210, 210, 1);
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    
+}
+
+.more_info_1,
+.more_info_2 {
+    background: rgba(89, 112, 255, 1);
+    color: white;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+}
+
+.more_info_2 {
+    margin-top: 87px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Располагаем карточки вертикально */
+    }
+
+    .first_card,
+    .second_card,
+    .third_card {
+        margin-bottom: 10px; /* Уменьшаем отступ между карточками */
+    }
+
+    .card_1_head_text_1,
+    .card_2_head_text_1,
+    .card_3_head_text_1 {
+        font-size: 20px; /* Уменьшаем размер шрифта для заголовков */
+    }
+
+    .card_1_head_text_2,
+    .card_2_head_text_2,
+    .card_3_head_text_2 {
+        font-size: 14px; /* Уменьшаем размер шрифта для подзаголовков */
+    }
+
+    .go_to_office,
+    .more_info_1,
+    .more_info_2 {
+        font-size: 14px; /* Уменьшаем размер шрифта для кнопок */
+    }
+}
+
+
+.spacer {
+    margin-bottom: -35px; /* Высота блока-заполнителя равна высоте кнопки "Текущий тариф" */
+  }

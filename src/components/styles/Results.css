@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+
+.search-results-content {
+    width: 100%;
+    background-color: var(--scan-white);
+    padding-top: 123px;
+    max-width: 1440px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.h1-search-results-page {
+    font-size: 40px;
+}
+
+.p-search-results-page-title-block {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.search-results-title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.search-results-large-picture {
+    height: 369px;
+    margin-bottom: -40px;
+}
+
+.h2-search-results-page {
+    font-family: Ferry;
+    font-size: 36px;
+}
+
+.general-summary-block {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.p-general-summary-title-block {
+    font-family: InterRegular, sans-serif;
+    font-size: 18px;
+    color: #949494;
+}
+
+@media (max-width: 1360px) {
+    .search-results-content {
+        max-width: 375px;
+        margin-bottom: 40px;
+    }
+    
+    .h1-search-results-page {
+        font-size: 28px;
+    }
+    
+    .p-search-results-page-title-block {
+        font-size: 18px;
+        padding-top: 5px;
+    }
+    
+    .search-results-title-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+        margin-right: 14px;
+        margin-left: 14px;
+    }
+    
+    .search-results-large-picture {
+        height: 233.73px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    
+    .h2-search-results-page {
+        font-size: 28px;
+    }
+    
+    .general-summary-block {
+        margin-right: 14px;
+        margin-left: 14px;
+    }
+    
+    .p-general-summary-title-block {
+        font-size: 18px;
+    }
+    
+}
